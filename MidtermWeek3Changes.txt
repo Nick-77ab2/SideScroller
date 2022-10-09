@@ -1,0 +1,24 @@
+Midterm Additions and Changes:
+Completely refactored the enemy code, making a ground enemy and an air enemy.
+	-The ground enemy moves forwards, the air enemy bounces off of the ground.
+	-Turned both into prefabs using the same script, movements separated by an if statement for name.Contains
+	
+Made an animation time for the sword
+	-This means that the sword's collider isn't active until you hit Left-Click and is only active for 1 second.
+	
+Made a UI
+	Contains:
+		Health (standard 3)
+		Time (counts up)
+		Score (500 for each kill + 1/(time to complete)*(some large number))
+		Kills, counts up when you kill an enemy.
+
+Added a "Flag Pole"
+	-Freezes the user on touching, this means you've won.
+	-Causes the timer to freeze
+	-Adds the time to complete to the score.
+
+Added player health:
+	-on getting touched you lose one life and have a "damage animation" timer that runs for 1.5 seconds giving you immunity to other enemies.
+	
+
